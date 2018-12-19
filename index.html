@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>High Low game</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1 id="grad1">Higher or Lower Game</h1>
+    <div class= "row">
+      <div class="difficulty" id="easy">1-10</div>
+      <div class="difficulty" id="medium">1-50</div>
+      <div class="difficulty" id="hard">1-100</div>
+      
+    </div>
+    
+    <input type="text" name="guess" id="guess"/>
+    <input type="submit" name="submit" id="submit"/>
+    
+    <div id="resultBox"> <h2 id="resultText"> guess too high or too low</h2> </div>
+    
+  
+  </div> <!-- end of wrapper div -->
+  <script type="text/javascript" src="house.js"></script>
+</body>
+
+</html>
+
+<!--https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash-->
+
+
+
+<!--Generate a random number between 1 and 100.-->
+<!--Record the turn number the player is on. Start it on 1.-->
+<!--Provide the player with a way to guess what the number is.-->
+<!--Once a guess has been submitted first record it somewhere so the user can see their previous guesses.-->
+<!--Next, check whether it is the correct number.-->
+<!--If it is correct:-->
+<!--Display congratulations message.-->
+<!--Stop the player from being able to enter more guesses (this would mess the game up).-->
+<!--Display control allowing the player to restart the game.-->
+<!--If it is wrong and the player has turns left:-->
+<!--Tell the player they are wrong.-->
+<!--Allow them to enter another guess.-->
+<!--Increment the turn number by 1.-->
+<!--If it is wrong and the player has no turns left:-->
+<!--Tell the player it is game over.-->
+<!--Stop the player from being able to enter more guesses (this would mess the game up).-->
+<!--Display control allowing the player to restart the game.-->
+<!--Once the game restarts, make sure the game logic and UI are completely reset, then go back to step 1.-->
