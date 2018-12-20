@@ -31,16 +31,26 @@ easy.addEventListener("click", (event) => {
   console.log("easy button clicked")
   console.log (randomNum1)
   difficulty = "easy"
+  easy.classList.add("active")
+  hard.classList.remove("active")
+  medium.classList.remove("active")
 })
 medium.addEventListener("click", (event) => {
   difficulty = "medium"
   console.log("medium button clicked")
    console.log (randomNum2)
+   medium.classList.add("active")
+   hard.classList.remove("active")
+   easy.classList.remove("active")
 })
 hard.addEventListener("click", (event) =>{
   difficulty = "hard"
   console.log("hard button clicked")
    console.log (randomNum3)
+   hard.classList.add("active")
+   easy.classList.remove("active")
+   medium.classList.remove("active")
+   
    
 })
 

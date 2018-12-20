@@ -80,5 +80,9 @@ body {
     margin: auto; 
     margin-bottom: 30px;
     width: 500px;
-    }
+}
     
+    
+.active {
+  box-shadow: 0 0 35px white;
+}
